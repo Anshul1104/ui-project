@@ -1,0 +1,27 @@
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-links {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 25px;
+}
+
+.link {
+    position: relative;
+}
+
+.link:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: -12px;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 50%;
+}

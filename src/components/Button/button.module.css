@@ -1,0 +1,40 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #fff;
+  height: 48px;
+  padding: 0 24px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  transition: all 0.1s linear;
+}
+
+.btn-primary {
+  background: linear-gradient(263.28deg, #ff6a56 1.1%, #fdaf4d 141.83%);
+  box-shadow: 0px 8px 30px rgba(10, 2, 23, 0.2);
+}
+
+.btn-primary:hover,
+.btn-tertiary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 1px solid #fff;
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  background: #fff;
+  color: #0e1b2c;
+}
+
+.btn-tertiary {
+  color: rgba(255, 115, 97, 1);
+  background: #fff;
+}

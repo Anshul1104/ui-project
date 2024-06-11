@@ -1,0 +1,132 @@
+.update-section {
+  padding: 100px 0 143px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.update-container {
+  display: flex;
+  gap: 30px;
+}
+
+.hiring-card {
+  background: rgba(253, 175, 77, 1);
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 500px;
+  gap: 20px;
+  flex: 2;
+  position: relative;
+}
+
+.hiring-card::after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/images/group-circle.png") no-repeat bottom right;
+  /* z-index: -1; */
+  background-size: contain;
+}
+
+.hiring-card--body {
+  z-index: 200;
+  padding-right: 20px;
+}
+
+.hiring-card--title {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.hiring-card--desc {
+  max-width: 342px;
+  padding-top: 21px;
+}
+
+.hiring-card--footer {
+  z-index: 200;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: -5px 4px 50px 0px rgba(0, 0, 0, 0.1);
+  padding: 0 15px;
+  justify-content: space-evenly;
+  text-align: center;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 18px;
+}
+
+.card-footer h4 {
+  font-weight: normal;
+  color: rgba(34, 108, 245, 1);
+  font-size: 22px;
+}
+
+.card-footer p {
+  font-size: 18px;
+  color: rgba(100, 100, 122, 1);
+  margin: 10px 0 0 0;
+}
+
+.action-btn {
+  color: rgba(255, 115, 97, 1);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .update-section {
+    display: block;
+    padding: 100px 0 143px 0;
+  }
+
+  .update-container {
+    gap: 20px;
+    margin-top: 32px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .hiring-card {
+    flex: 1;
+    min-width: 300px;
+    padding: 50px 30px;
+  }
+  .hiring-card--title {
+    font-size: 26px;
+  }
+  .hiring-card--desc {
+    margin-top: 0;
+  }
+  .hiring-card--footer button {
+    width: 100%;
+  }
+  .card {
+    min-width: 270px;
+  }
+  .action-btn {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+}

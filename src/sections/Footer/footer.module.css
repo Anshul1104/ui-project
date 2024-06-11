@@ -1,0 +1,36 @@
+.footer-section {
+  padding: 120px 0 78px 0;
+  background: url("../../assets/images/footer-bg.png") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 346px;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: -32px;
+  left: 8%;
+}
+
+.form {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-section {
+    height: 468px;
+  }
+  .icon {
+    width: 100px;
+    top: -45px;
+    left: 0;
+  }
+  .form {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,157 @@
+.header {
+  background: url("../../assets/images/header-bg.png") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 650px;
+  padding-top: 36px;
+  color: #fff;
+}
+
+.navbar {
+  padding: 0 14%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  min-width: 100px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 39px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-item:hover {
+  color: #eee;
+  transform: translateY(-2px);
+}
+
+.header-content {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 700px;
+}
+
+.heading {
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  padding: 0 100px;
+}
+
+.heading .bg {
+  display: inline-block;
+}
+
+.heading .bg::before {
+  content: "";
+  position: absolute;
+  bottom: 11px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 160px;
+  height: 23px;
+  background: rgba(128, 94, 255, 1);
+  z-index: -1;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    background: url("../../assets/images/header-bg-sm.png") no-repeat bottom
+      center;
+    background-size: cover;
+    padding: 39px 20px 0 20px;
+    height: 670px;
+  }
+  .navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .logo img {
+    width: 120px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    left: 0;
+    font-size: 14px;
+    gap: 20px;
+    background: linear-gradient(263.28deg, #ff6a56 1.1%, #fdaf4d 141.83%);
+    color: #fff;
+    align-items: center;
+    opacity: 0;
+    height: 0;
+    transition: all 0.2s ease;
+  }
+  .nav-items.active {
+    opacity: 1;
+    height: auto;
+  }
+  .hamburger {
+    cursor: pointer;
+  }
+  .header-content {
+    width: 100%;
+    margin-top: 35px;
+  }
+  .heading {
+    padding: 0 24px;
+  }
+  .heading .bg::before {
+    display: none;
+  }
+  .actions {
+    align-items: center;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .btn-sm {
+    width: 232px;
+  }
+}
